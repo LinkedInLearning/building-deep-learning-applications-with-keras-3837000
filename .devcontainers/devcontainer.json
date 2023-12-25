@@ -1,12 +1,12 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-  "name": "Python ML Development",
+  "name": "Python",
   "build": {
     "dockerfile": "Dockerfile"
   },
   "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
-  "postCreateCommand": "pip install -r requirements.txt",
+  "postCreateCommand": "pip install tensorflow pandas scikit-learn matplotlib pylint autopep8",
   "forwardPorts": [
     3000
   ],
@@ -15,7 +15,6 @@
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "ms-python.vscode-pylance",
         "dbaeumer.vscode-eslint",
         "GitHub.github-vscode-theme"
       ]

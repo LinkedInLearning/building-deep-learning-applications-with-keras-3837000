@@ -2,8 +2,6 @@
 FROM mcr.microsoft.com/devcontainers/python:1-3.11-bullseye
 
 # Install Python packages
-COPY requirements.txt /tmp/pip-tmp/
-RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt \
-    && rm -rf /tmp/pip-tmp
+RUN pip3 --disable-pip-version-check --no-cache-dir install -r tensorflow pandas scikit-learn matplotlib pylint autopep8
 
 WORKDIR /workspace
