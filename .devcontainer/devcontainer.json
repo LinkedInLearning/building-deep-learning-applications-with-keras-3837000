@@ -1,0 +1,27 @@
+{
+  "name": "Python with TensorFlow",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "3.11-bullseye",
+      "INSTALL_NODE": "false",
+      "NODE_VERSION": "lts/*"
+    }
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "python.pythonPath": "/usr/local/bin/python"
+  },
+  "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "forwardPorts": [
+    3000
+  ],
+  "postAttachCommand": "git pull --all",
+  "extensions": [
+    "ms-python.python",
+    "dbaeumer.vscode-eslint",
+    "GitHub.github-vscode-theme"
+  ],
+  "remoteUser": "vscode"
+}
