@@ -15,17 +15,9 @@
   "emmet.triggerExpansionOnTab": true,
   "explorer.openEditors.visible": 0,
   "files.autoSave": "afterDelay",
+  "screencastMode.onlyKeyboardShortcuts": true,
   "terminal.integrated.fontSize": 18,
   "workbench.colorTheme": "Visual Studio Dark",
-  "workbench.statusBar.visible": true,
-  // Python specific settings updated for the latest extension versions
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "python.formatting.provider": "autopep8",
-  "python.formatting.autopep8Args": [],
-  // The settings related to python.analysis are typically used by the Pylance extension
-  // Assuming Pylance is installed and set as the language server
-  "python.languageServer": "Pylance",
-  "python.analysis.typeCheckingMode": "basic",
-  "python.analysis.completeFunctionParens": true
+  "workbench.fontAliasing": "antialiased",
+  "workbench.statusBar.visible": true
 }

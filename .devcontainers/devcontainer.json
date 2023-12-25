@@ -1,17 +1,23 @@
-"customizations": {
-  "vscode": {
-    "settings": {
-      "terminal.integrated.shell.linux": "/bin/bash",
-      "python.languageServer": "Pylance",
-      "python.linting.enabled": true,
-      "python.linting.pylintEnabled": true,
-      "python.formatting.provider": "autopep8",
-      "editor.formatOnSave": true
-    },
-    "extensions": [
-      "ms-python.python",
-      "ms-python.vscode-pylance",
-      "ms-toolsai.jupyter"
-    ]
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+  "name": "Python ML Development",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "forwardPorts": [
+    3000
+  ],
+  "postAttachCommand": "git pull --all",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "dbaeumer.vscode-eslint",
+        "GitHub.github-vscode-theme"
+      ]
+    }
   }
 }
