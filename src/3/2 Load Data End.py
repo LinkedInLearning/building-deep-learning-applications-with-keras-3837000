@@ -9,3 +9,4 @@ import matplotlib.pyplot as plt
 
 # Load the data
 data = pd.read_csv("input/Tesla_Nasdaq_Prediction.csv")
+print(data)
