@@ -15,8 +15,9 @@
     "vscode": {
       "extensions": [
         "ms-python.python",
+        "ms-python.vscode-pylance",
         "dbaeumer.vscode-eslint",
-        "GitHub.github-vscode-theme"
+        "GitHub.github-vscode-theme",
       ]
     }
   }
