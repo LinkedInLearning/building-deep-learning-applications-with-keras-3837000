@@ -1,12 +1,17 @@
-{
-    "name": "Python TensorFlow Development",
-    "dockerFile": "Dockerfile",
-    "settings": { 
-      "terminal.integrated.shell.linux": "/bin/bash"
+"customizations": {
+  "vscode": {
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash",
+      "python.languageServer": "Pylance",
+      "python.linting.enabled": true,
+      "python.linting.pylintEnabled": true,
+      "python.formatting.provider": "autopep8",
+      "editor.formatOnSave": true
     },
     "extensions": [
       "ms-python.python",
+      "ms-python.vscode-pylance",
       "ms-toolsai.jupyter"
-    ],
-    "postCreateCommand": "pip install -r requirements.txt"
+    ]
   }
+}

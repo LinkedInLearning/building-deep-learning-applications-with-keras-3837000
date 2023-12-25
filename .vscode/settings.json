@@ -1,18 +1,31 @@
 {
-  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.cursorBlinking": "solid",
+  "editor.fontFamily": "ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 22,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "on",
+  "editor.matchBrackets": "always",
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.tabSize": 2,
+  "editor.useTabStops": true,
+  "emmet.triggerExpansionOnTab": true,
+  "explorer.openEditors.visible": 0,
+  "files.autoSave": "afterDelay",
+  "terminal.integrated.fontSize": 18,
+  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.statusBar.visible": true,
+  // Python specific settings updated for the latest extension versions
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
-  "python.linting.pylintPath": "/usr/local/bin/pylint",
   "python.formatting.provider": "autopep8",
-  "python.formatting.autopep8Path": "/usr/local/bin/autopep8",
-  "editor.formatOnSave": true,
-  "workbench.colorCustomizations": {
-    "[Default Dark+]": {
-      "editorError.foreground": "#FF0000",
-      "editorWarning.foreground": "#FFA500",
-      "editorInfo.foreground": "#FFFF00",
-      "editorHint.foreground": "#00FF00"
-    }
-  },
-  "workbench.colorTheme": "Default Dark+"
+  "python.formatting.autopep8Args": [],
+  // The settings related to python.analysis are typically used by the Pylance extension
+  // Assuming Pylance is installed and set as the language server
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.completeFunctionParens": true
 }
