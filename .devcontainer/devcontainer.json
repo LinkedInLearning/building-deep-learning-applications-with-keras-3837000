@@ -1,31 +1,26 @@
 {
-  "name": "Python with TensorFlow",
+  "name": "Python 3.11 with TensorFlow",
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
-      "VARIANT": "3.11-bullseye",
-      "INSTALL_NODE": "false",
-      "NODE_VERSION": "lts/*"
+      "VARIANT": "3.11-bullseye"
     }
   },
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash",
-        "python.pythonPath": "/usr/local/bin/python"
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.languageServer": "Pylance"
       },
       "extensions": [
         "ms-python.python",
-        "dbaeumer.vscode-eslint",
-        "GitHub.github-vscode-theme"
+        "ms-python.vscode-pylance"
       ]
     }
   },
-  "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
-  "postCreateCommand": "pip install -r requirements.txt",
+  "remoteUser": "vscode",
   "forwardPorts": [
     3000
   ],
-  "postAttachCommand": "git pull --all",
-  "remoteUser": "vscode"
+  "postAttachCommand": "git pull --all"
 }

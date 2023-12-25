@@ -1,14 +1,11 @@
-# Use the specified Python image from Microsoft Container Registry
-FROM mcr.microsoft.com/devcontainers/python:0-3.11-bullseye
+# Use the official Python 3.11 image from Docker Hub.
+FROM python:3.11-bullseye
 
-# [Optional] Install Node.js
-ARG INSTALL_NODE="false"
-ARG NODE_VERSION="lts/*"
-RUN if [ "${INSTALL_NODE}" = "true" ]; then su vscode -c "umask 0002 && . /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION}"; fi
-
-# Install Python packages
-COPY requirements.txt /tmp/pip-tmp/
-RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt \
-    && rm -rf /tmp/pip-tmp
-
+# Set the working directory in the container to `/workspace`.
 WORKDIR /workspace
+
+# Copy the requirements file from your host to the current directory in the container.
+COPY requirements.txt .
+
+# Install any needed packages specified in `requirements.txt`.
+RUN pip install --no-cache-dir -r requirements.txt

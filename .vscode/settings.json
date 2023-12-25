@@ -13,16 +13,15 @@
   "editor.tabSize": 2,
   "editor.useTabStops": true,
   "emmet.triggerExpansionOnTab": true,
-  "explorer.openEditors.visible": 0,
+  "explorer.openEditors.visible": 1,
   "files.autoSave": "afterDelay",
   "python.analysis.indexing": true,
   "python.analysis.typeCheckingMode": "basic",
-  "screencastMode.onlyKeyboardShortcuts": true,
   "terminal.integrated.fontSize": 18,
   "workbench.colorTheme": "Visual Studio Dark",
-  "workbench.fontAliasing": "antialiased",
   "workbench.statusBar.visible": true,
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "python.linting.autopep8Enabled": true
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingImports": "none",
+    "reportGeneralTypeIssues": "none"
+  }
 }
