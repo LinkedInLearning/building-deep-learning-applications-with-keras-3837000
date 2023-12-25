@@ -9,16 +9,16 @@
   "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
   "customizations": {
     "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "GitHub.github-vscode-theme",
+        "dbaeumer.vscode-eslint",
+        "ms-python.vscode-pylance"
+      ],
       "settings": {
         "python.defaultInterpreterPath": "/usr/local/bin/python",
         "python.languageServer": "Pylance"
-      },
-      "extensions": [
-        "ms-python.python",
-        "ms-python.vscode-pylance",
-        "GitHub.github-vscode-theme",
-        "dbaeumer.vscode-eslint"
-      ]
+      }
     }
   },
   "forwardPorts": [

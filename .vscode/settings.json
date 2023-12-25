@@ -15,7 +15,6 @@
   "emmet.triggerExpansionOnTab": true,
   "explorer.openEditors.visible": 1,
   "files.autoSave": "afterDelay",
-  "git.hints.enabled": false,
   "python.analysis.indexing": true,
   "python.analysis.typeCheckingMode": "basic",
   "terminal.integrated.fontSize": 18,
