@@ -6,6 +6,7 @@
       "VARIANT": "3.11-bullseye"
     }
   },
+  "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
   "customizations": {
     "vscode": {
       "settings": {
@@ -14,12 +15,14 @@
       },
       "extensions": [
         "ms-python.python",
-        "ms-python.vscode-pylance"
+        "ms-python.vscode-pylance",
+        "GitHub.github-vscode-theme",
+        "dbaeumer.vscode-eslint"
       ]
     }
   },
   "forwardPorts": [
     3000
   ],
-  "postAttachCommand": "git pull --all"
+  "postAttachCommand": "git pull --ff-only"
 }
