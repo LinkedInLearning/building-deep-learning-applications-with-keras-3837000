@@ -99,9 +99,9 @@ plt.clf()  # Clear the current figure
 print(model.summary())
 
 # Save the model for future use
-#model.save("trained_model.h5")
+#model.save("output/model/trained_model.h5")
 #print("Model saved")
 
 # To load the model:
 # from keras.models import load_model
-# model = load_model("trained_model.h5")
+# model = load_model("output/model/trained_model.h5")
