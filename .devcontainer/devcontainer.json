@@ -6,7 +6,7 @@
       "VARIANT": "3.11-bullseye"
     }
   },
-  "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
+  "onCreateCommand": "echo PS1='$ ' >> ~/.bashrc",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -15,11 +15,7 @@
         "dbaeumer.vscode-eslint",
         "ms-python.vscode-pylance",
         "ms-python.tensorboard"
-      ],
-      "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/python",
-        "python.languageServer": "Pylance"
-      }
+      ]
     }
   },
   "forwardPorts": [

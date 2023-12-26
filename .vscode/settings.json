@@ -19,6 +19,8 @@
   "python.analysis.typeCheckingMode": "basic",
   "terminal.integrated.fontSize": 18,
   "workbench.colorTheme": "Visual Studio Dark",
+  "python.defaultInterpreterPath": "/usr/local/bin/python",
+  "python.languageServer": "Pylance",
   "workbench.statusBar.visible": true,
   "python.analysis.diagnosticSeverityOverrides": {
     "reportMissingImports": "none",
