@@ -13,7 +13,7 @@
         "ms-python.python",
         "GitHub.github-vscode-theme",
         "dbaeumer.vscode-eslint",
-        "ms-python.tensorboard",
+        "ms-toolsai.tensorboard",
         "ms-azuretools.vscode-docker",
         "ms-python.vscode-pylance"
       ]
