@@ -13,8 +13,9 @@
         "ms-python.python",
         "GitHub.github-vscode-theme",
         "dbaeumer.vscode-eslint",
-        "ms-python.vscode-pylance",
-        "ms-python.tensorboard"
+        "ms-python.tensorboard",
+        "ms-azuretools.vscode-docker",
+        "ms-python.vscode-pylance"
       ]
     }
   },
