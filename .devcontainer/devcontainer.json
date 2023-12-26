@@ -13,7 +13,8 @@
         "ms-python.python",
         "GitHub.github-vscode-theme",
         "dbaeumer.vscode-eslint",
-        "ms-python.vscode-pylance"
+        "ms-python.vscode-pylance",
+        "ms-python.tensorboard"
       ],
       "settings": {
         "python.defaultInterpreterPath": "/usr/local/bin/python",
