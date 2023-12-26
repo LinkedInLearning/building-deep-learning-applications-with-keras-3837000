@@ -9,7 +9,7 @@ from tensorflow.keras.callbacks import TensorBoard
 
 
 # Load the data
-data = pd.read_csv("input/Tesla_Nasdaq_Prediction.csv")
+data = pd.read_csv("input/data/Tesla_Nasdaq_Prediction.csv")
 
 # Prepare the dataset
 features = data.iloc[:, 1:-2].values

@@ -6,7 +6,7 @@ from keras.applications import resnet50
 model = resnet50.ResNet50(weights='imagenet')
 
 # Load an image file, resizing it to 224x224 pixels (size required by ResNet50 model)
-img = image.load_img("input/woman.jpeg", target_size=(224, 224))
+img = image.load_img("input/image/woman.jpeg", target_size=(224, 224))
 
 # Convert the image to a numpy array which is the format Keras requires
 

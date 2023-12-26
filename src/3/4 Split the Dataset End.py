@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 
 # Load the data
-data = pd.read_csv("input/Tesla_Nasdaq_Prediction.csv")
+data = pd.read_csv("input/data/Tesla_Nasdaq_Prediction.csv")
 
 # Prepare the data
 features = data.iloc[:, 1:-2].values
