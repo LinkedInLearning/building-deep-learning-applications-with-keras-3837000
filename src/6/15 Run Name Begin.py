@@ -47,7 +47,7 @@ model.compile(optimizer='adam', loss='mse')
 # Add run name to the logger
 
 logger = TensorBoard(
-    log_dir="logs",
+    log_dir="output/logs",
     histogram_freq=5,
     write_graph=True,
     write_images=True
@@ -71,7 +71,7 @@ plt.xlabel('Sample Index')
 plt.ylabel('TESLA/USD Value')
 plt.legend()
 plt.show()
-plt.savefig('output/TESLA_USD_Predictions.png')
+plt.savefig('output/fig/TESLA_USD_Predictions.png')
 plt.clf()  # Clear the current figure
 
 # Calculate metrics
@@ -92,7 +92,7 @@ plt.xlabel('Epochs')
 plt.ylabel('Loss')
 plt.legend()
 plt.show()
-plt.savefig('output/Training_validation_loss.png')
+plt.savefig('output/fig/Training_validation_loss.png')
 plt.clf()  # Clear the current figure
 
 print(model.summary())
