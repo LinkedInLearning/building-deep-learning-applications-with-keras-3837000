@@ -8,5 +8,5 @@ import matplotlib.pyplot as plt
 
 
 # Load the datainput/data/Tesla_Nasdaq_Prediction.csv
-data = pd.read_csv("")
+data = pd.read_csv("input/data/Tesla_Nasdaq_Prediction.csv")
 print(data)
