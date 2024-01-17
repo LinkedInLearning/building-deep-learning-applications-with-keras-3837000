@@ -29,7 +29,7 @@ class DataAnalysis:
 
     def create_linear_fit_plot(self):
         slope, intercept, _, _, _ = linregress(self.data['Age'], self.data['Guess'])
-         # Print the slope and intercept
+        # Print the slope and intercept
         print("Slope:", slope)
         print("Intercept:", intercept)
         
