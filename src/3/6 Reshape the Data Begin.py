@@ -25,5 +25,3 @@ y_train_scaled = scaler.fit_transform(y_train.reshape(-1, 1))
 y_test_scaled = scaler.transform(y_test.reshape(-1, 1))
 
 # Reshape input to be [samples, time steps, features] which is required for RNN
-X_train_reshaped = X_train_scaled.reshape((X_train_scaled.shape[0], 1, X_train_scaled.shape[1]))
-X_test_reshaped = X_test_scaled.reshape((X_test_scaled.shape[0], 1, X_test_scaled.shape[1]))
