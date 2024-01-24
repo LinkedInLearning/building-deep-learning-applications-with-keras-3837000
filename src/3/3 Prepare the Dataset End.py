@@ -11,5 +11,10 @@ import matplotlib.pyplot as plt
 data = pd.read_csv("input/data/Tesla_Nasdaq_Prediction.csv")
 
 # Prepare the dataset
-features = data.iloc[:, 1:-2].values
+features_df = data.iloc[:, 2:]
+print(features_df.head())
+target_df = data['Close/Last']
+print(target_df.head())
+
+features = data.iloc[:, 2:].values
 target = data['Close/Last'].values

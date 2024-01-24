@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 data = pd.read_csv("input/data/Tesla_Nasdaq_Prediction.csv")
 
 # Prepare the data
-features = data.iloc[:, 1:-2].values
+features = data.iloc[:, 2:].values
 target = data['Close/Last'].values
 
 # Split the dataset into training and testing sets
