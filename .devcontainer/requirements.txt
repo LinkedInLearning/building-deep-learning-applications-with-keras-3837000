@@ -1,5 +1,6 @@
 tensorflow-cpu
 pandas
+pyarrow
 scikit-learn
 matplotlib
 pylint
