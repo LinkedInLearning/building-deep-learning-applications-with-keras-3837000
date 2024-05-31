@@ -7,9 +7,9 @@ Keras, a high-level neural networks API, is gaining popularity for its ease of u
 
 ### Instructor
 
-Isil Berkun
+Isil Berkun, PhD.
 
-Data Scientist at Intel Corp.                 
+Founder of DigiFab AI.                 
 
 Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/isil-berkun).
 
